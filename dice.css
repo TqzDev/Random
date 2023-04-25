@@ -1,0 +1,101 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.heading-col {
+   color: rebeccapurple;
+}
+
+.btn {
+   background-color: rebeccapurple;
+   color: white;
+}
+
+.dice {
+   max-width: 150px;
+   border-radius: 30px;
+   border: 10px solid rgba(255, 255, 255, 0.9);
+}
+
+.card {
+   border: none;
+   background: none;
+}
+
+body {
+   background-image: url("img/bg.jpg");
+   /*background-repeat: repeat-x;*/
+   background-size: cover;
+}
+
+.diceRoll {
+   -webkit-animation-name: roll;
+   animation-name: roll;
+   -webkit-animation-duration: 0.5s;
+   animation-duration: 0.5s;
+   -webkit-animation-iteration-count: 1;
+   animation-iteration-count: 1;
+   -webkit-animation-fill-mode: forwards;
+   animation-fill-mode: forwards;
+   -webkit-animation-timing-function: ease-out;
+   animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes roll {
+   100% {
+      -webkit-transform: rotate(2turn);
+      transform: rotate(2turn);
+   }
+}
+
+@keyframes roll {
+   100% {
+      -webkit-transform: rotate(2turn);
+      transform: rotate(2turn);
+   }
+}
+
+@media (max-width: 600px) {
+   h1 {
+      font-size: 30px !important;
+   }
+
+   #NumDice {
+      display: block !important;
+      text-align: left;
+      margin: 0 !important;
+   }
+
+   .dice {
+      max-width: 100px;
+      border-radius: 20px;
+      border: 6px solid rgba(255, 255, 255, 0.9);
+   }
+
+   .card {
+      max-width: 30%;
+      display: inline-block;
+      margin: 0 1.5% !important;
+   }
+
+   .custom-switch {
+      float: right;
+      margin-right: 5% !important;
+   }
+
+   .form-check {
+      float: left !important;
+   }
+
+   #inlineRadio1 {
+      margin-left: 5% !important;
+   }
+
+   body {
+      background-image: none;
+      background: #383838;
+   }
+}
